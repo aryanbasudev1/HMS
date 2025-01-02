@@ -1,40 +1,11 @@
-// $(document).ready(function () {
-//     // Add animations for both cards with delay
-//     $('#patientLogin').css({
-//         opacity: 0,
-//         transform: 'translateY(50px)'
-//     }).animate({
-//         opacity: 1,
-//         transform: 0
-//     }, 1000);
-
-//     $('#doctorLogin').css({
-//         opacity: 0,
-//         transform: 'translateY(50px)'
-//     }).delay(300).animate({
-//         opacity: 1,
-//         transform: 0
-//     }, 1000);
-
-//     // Add hover effect using Bootstrap classes
-//     $('.login-card').hover(
-//         function () {
-//             $(this).addClass('shadow-lg').css('cursor', 'pointer');
-//         },
-//         function () {
-//             $(this).removeClass('shadow-lg');
-//         }
-//     );
-// });
-
 $(document).ready(function() {
-    // Set initial styles for Patient Login Card using jQuery
+    
     $('#patientLogin').css({
         opacity: 0,
         transform: 'translateY(50px)'
     });
 
-    // Animate Patient Login Card
+    
     $('#patientLogin').animate({
         opacity: 1
     }, {
@@ -47,13 +18,13 @@ $(document).ready(function() {
         }
     });
 
-    // Set initial styles for Doctor Login Card using jQuery
+    
     $('#doctorLogin').css({
         opacity: 0,
         transform: 'translateY(50px)'
     });
 
-    // Animate Doctor Login Card
+    
     $('#doctorLogin').delay(200).animate({
         opacity: 1
     }, {
@@ -66,7 +37,7 @@ $(document).ready(function() {
         }
     });
 
-    // Match Navbar Styling with Home Page
+    
     $('.navbar').removeClass('navbar-dark bg-primary').addClass('navbar-light bg-light');
     $('.nav-link').css({
         color: '#007bff',

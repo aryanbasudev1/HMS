@@ -1,0 +1,149 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f3f6f9;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    flex: 1; /* Ensures footer stays at the bottom */
+    padding: 20px; /* Adds spacing around the content */
+    gap: 20px; /* Adds spacing between cards */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.navbar .nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #007bff !important;
+    font-weight: 600;
+    margin-left: 15px;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3 !important;
+    text-decoration: none;
+}
+
+/* General Card Styling */
+.card {
+    width: 100%; /* Full-width cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 20px; /* Spacing between cards */
+    opacity: 0; /* For animation */
+    transform: translateY(50px); /* For animation */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Welcome Card */
+.welcome-card {
+    text-align: left; /* Keep the welcome text left-aligned */
+    color: #4a4a4a;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 30px;
+}
+
+/* Appointment Form Card */
+.appointment-card form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center; /* Align input boxes vertically */
+    justify-content: space-between; /* Space input boxes evenly */
+}
+
+.appointment-card .btn {
+    margin-top: 20px;
+    align-self: flex-start; /* Align the button to the bottom-left */
+}
+
+/* Table Card */
+.table-card {
+    max-height: 400px; /* Restrict card height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.table-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-card::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.table-card::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Sticky Header for Table */
+.table-scroll {
+    max-height: 300px; /* Set a fixed height for scrollable area */
+    overflow-y: auto;
+    position: relative;
+}
+
+.sticky-header th {
+    position: sticky;
+    top: 0;
+    background-color: #343a40;
+    color: white;
+    z-index: 2;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px; /* Adds spacing above the footer */
+}

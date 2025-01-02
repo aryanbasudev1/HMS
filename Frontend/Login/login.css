@@ -1,0 +1,91 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-top: 56px; /* Adjusts for fixed navbar height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f3f6f9; /* Light gray background */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle bottom border */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff; /* Primary blue */
+    text-transform: uppercase;
+}
+
+.navbar .nav-link {
+    color: #007bff !important; /* Modern blue for links */
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3 !important; /* Darker blue on hover */
+    text-decoration: none;
+}
+.navbar .nav-link {
+    font-family: 'Poppins', sans-serif; /* Ensure consistent font */
+    color: #007bff !important; /* Primary blue for links */
+    font-weight: 600; /* Bold text for emphasis */
+    margin-left: 15px; /* Space between links */
+    text-transform: capitalize; /* Ensure consistent text case */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3 !important; /* Slightly darker blue on hover */
+    text-decoration: none;
+}
+/* Content Wrapper Styling */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: space-between; /* Ensure cards fill space with a gap */
+    align-items: center; /* Center cards vertically */
+    padding: 50px 10px; /* Padding around content */
+    gap: 20px; /* Space between the cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+/* Login Card Styling */
+.login-card {
+    flex: 1; /* Make the cards take equal space */
+    max-width: 48%; /* Ensure responsiveness and spacing */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white;
+    opacity: 0; /* For animation */
+    transform: translateY(50px); /* For animation */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Hover Effect for Login Card */
+.login-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px; /* Space between stacked cards */
+    }
+
+    .login-card {
+        max-width: 100%; /* Cards take full width on small screens */
+    }
+}

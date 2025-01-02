@@ -1,0 +1,110 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-top: 56px; /* Adjusts for fixed navbar height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle bottom border */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff; /* Primary blue */
+    text-transform: uppercase;
+}
+
+.navbar .nav-link {
+    color: #007bff !important; /* Modern blue for links */
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3 !important; /* Darker blue on hover */
+    text-decoration: none;
+}
+.navbar .nav-link {
+    font-family: 'Poppins', sans-serif; /* Ensure consistent font */
+    color: #007bff !important; /* Primary blue for links */
+    font-weight: 600; /* Bold text for emphasis */
+    margin-left: 15px; /* Space between links */
+    text-transform: capitalize; /* Ensure consistent text case */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3 !important; /* Slightly darker blue on hover */
+    text-decoration: none;
+}
+/* Main Banner Styling */
+.main-banner {
+    height: 100vh; /* Full viewport height */
+    background-image: url('./images/hospital-administrators-1.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.main-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-banner h1,
+.main-banner p {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px 10px;
+}
+
+.footer-row h5 {
+    font-weight: 600;
+}
+
+.footer-row ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-row ul li a {
+    text-decoration: none;
+    color: #007bff; /* Primary blue for footer links */
+}
+
+.footer-row ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #777; /* Light gray for text */
+    border-top: 1px solid #ddd; /* Border between footer sections */
+    padding-top: 10px;
+}
